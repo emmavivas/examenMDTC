@@ -12,210 +12,217 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid text-light bg-dark py-3">
     <div class="container">
-      <nav class="row">
-        <header>
-          <!--Navegación-->
-          <div class="col">
+      <header>
+        <!--Navegación-->
+        <nav class="row">
+          <div class="col align-content-center">
             <a class="navbar-brand" href="#">MasterD</a>
           </div>
-          <div class="col">
+          <div class="col d-flex justify-content-end">
             <ul class="navbar-nav flex-row gap-4">
               <li class="nav-item"><a class="nav-link" href="#" title="">Inicio</a></li>
               <li class="nav-item"><a class="nav-link" href="#" title="">Acerca de</a></li>
               <li class="nav-item"><a class="nav-link" href="#" title="">Contacto</a></li>
             </ul>
           </div>
-      </nav>
+        </nav>
       </header>
+    </div>
+  </div>
 
-      <main>
-        <div id="carrusel">
-          <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/images/carrusel1.jpg" class="d-block w-100" alt="Carousel image" width="800"
-                  height="380">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/images/carrusel2.jpg" class="d-block w-100" alt="Carousel image" width="800"
-                  height="380">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/images/carrusel3.jpg" class="d-block w-100" alt="Carousel image" width="800"
-                  height="380">
-              </div>
-              <div class="carousel-item">
-                <img src="./assets/images/carrusel4.jpg" class="d-block w-100" alt="Carousel image" width="796"
-                  height="380">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+  <div class="container">
+    <main>
+      <div id="carrusel" class="d-none d-md-block my-5">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+              aria-label="Slide 3"></button>
           </div>
-
-        </div>
-        <div id="Form">
-          <div class="row">
-            <div class="col-12 col-lg-6 my-3">
-              <h1>Presupuesto</h1>
-              <form action="#" method="post">
-                <label class="form-label" for="nombre">Nombre:</label>
-                <input class="form-control" type="text" name="nombre" id="nombre" required>
-                <label class="form-label" for="apellido">Apellido:</label>
-                <input class="form-control" type="text" id="apellido" required>
-
-                <label class="form-label" for="correo">Correo:</label>
-                <input class="form-control" type="email" id="correo" required>
-
-                <label class="form-label" for="telefono">Teléfono:</label>
-                <input class="form-control" type="tel" id="telefono" required>
-
-                <label class="form-label" for="base">Tipo de trabajo</label>
-                <select id="base">
-                  <option>Elige una opción</option>
-                  <option>HTML básico 1000€</option>
-                  <option>Diseño avanzado 1400€</option>
-                  <option>Panel de administración 2500€</option>
-                </select>
-
-                <label class="form-label" for="plazo">Plazo en meses:</label>
-                <input class="form-control" type="number" min="0" id="plazo" required>
-
-                <div class="row">
-                  <div class="col-6">
-                    <input type="checkbox" id="galeria">
-                    <label class="form-label" for="galeria">Galería</label>
-                  </div>
-                  <div class="col-6">
-                    <input type="checkbox" id="formulario">
-                    <label class="form-label" for="formulario">Formulario de presupuesto</label>
-                  </div>
-                  <div class="col-6">
-                    <input type="checkbox" id="ecom">
-                    <label class="form-label" for="ecom">Tienda</label>
-                  </div>
-                  <div class="col-6">
-                    <input type="checkbox" id="redes">
-                    <label class="form-label" for="redes">Redes sociales</label>
-                  </div>
-                  <div class="col-6">
-                    <input type="checkbox" id="localiz">
-                    <label class="form-label" for="localiz">Mapa localización interactivo</label>
-                  </div>
-                  <div class="col-6">
-                    <input type="checkbox" id="soporteweb">
-                    <label class="form-label" for="soporteweb">Soporte Web</label>
-                  </div>
-                </div>
-                <label class="form-label" for="total">Presupuesto estimado:</label>
-                <input class="form-control" type="text" id="total" disabled>
-
-                <input type="checkbox" id="privacidad" required>
-                <label class="form-label" for="privacidad">He leido la política de privacidad</label>
-                <div class="col">
-                  <button type="submit" class="btn btn-primary">Enviar datos</button>
-
-                </div>
-              </form>
-
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/images/carrusel1.jpg" class="d-block w-100" alt="Carousel image" width="800"
+                height="380">
             </div>
-            <div class="col-12 col-lg-6" id="zonaNoticias">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <div class="card">
-                    <img src="./assets/images/noticia1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="card">
-                    <img src="./assets/images/noticia2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="card">
-                    <img src="./assets/images/noticia3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-6">
-                  <div class="card">
-                    <img src="./assets/images/noticia4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the card’s content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+            <div class="carousel-item">
+              <img src="./assets/images/carrusel2.jpg" class="d-block w-100" alt="Carousel image" width="800"
+                height="380">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/carrusel3.jpg" class="d-block w-100" alt="Carousel image" width="800"
+                height="380">
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/carrusel4.jpg" class="d-block w-100" alt="Carousel image" width="796"
+                height="380">
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </main>
 
-      <footer>
+      </div>
+      <div id="Form" class="mb-5">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <h3>Footer content</h3>
+          <div class="col-12 col-lg-6 my-3">
+            <h1>Presupuesto</h1>
+            <form action="#" method="post">
+              <label class="form-label" for="nombre">Nombre:</label>
+              <input class="form-control" type="text" name="nombre" id="nombre" required>
+              <label class="form-label" for="apellido">Apellido:</label>
+              <input class="form-control" type="text" id="apellido" required>
+
+              <label class="form-label" for="correo">Correo:</label>
+              <input class="form-control" type="email" id="correo" required>
+
+              <label class="form-label" for="telefono">Teléfono:</label>
+              <input class="form-control" type="tel" id="telefono" required>
+
+              <label class="form-label" for="base">Tipo de trabajo</label>
+              <select id="base">
+                <option>Elige una opción</option>
+                <option>HTML básico 1000€</option>
+                <option>Diseño avanzado 1400€</option>
+                <option>Panel de administración 2500€</option>
+              </select>
+
+              <label class="form-label" for="plazo">Plazo en meses:</label>
+              <input class="form-control" type="number" min="0" id="plazo" required>
+
+              <div class="row">
+                <div class="col-6">
+                  <input type="checkbox" id="galeria">
+                  <label class="form-label" for="galeria">Galería</label>
+                </div>
+                <div class="col-6">
+                  <input type="checkbox" id="formulario">
+                  <label class="form-label" for="formulario">Formulario de presupuesto</label>
+                </div>
+                <div class="col-6">
+                  <input type="checkbox" id="ecom">
+                  <label class="form-label" for="ecom">Tienda</label>
+                </div>
+                <div class="col-6">
+                  <input type="checkbox" id="redes">
+                  <label class="form-label" for="redes">Redes sociales</label>
+                </div>
+                <div class="col-6">
+                  <input type="checkbox" id="localiz">
+                  <label class="form-label" for="localiz">Mapa localización interactivo</label>
+                </div>
+                <div class="col-6">
+                  <input type="checkbox" id="soporteweb">
+                  <label class="form-label" for="soporteweb">Soporte Web</label>
+                </div>
+              </div>
+              <label class="form-label" for="total">Presupuesto estimado:</label>
+              <input class="form-control" type="text" id="total" disabled>
+
+              <input type="checkbox" id="privacidad" required>
+              <label class="form-label" for="privacidad">He leido la política de privacidad</label>
+              <div class="col">
+                <button type="submit" class="btn btn-primary">Enviar datos</button>
+
+              </div>
+            </form>
+
+          </div>
+          <div class="col-12 col-lg-6" id="zonaNoticias">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <img src="./assets/images/noticia1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <img src="./assets/images/noticia2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <img src="./assets/images/noticia3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card">
+                  <img src="./assets/images/noticia4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                      the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="container-fluid text-light bg-dark">
+    <div class="container">
+      <footer class="text-light bg-dark">
+        <div class="row text-center py-3">
+          <div class="col-12 col-lg-6">
+            <h3 class="fs-5">Footer content</h3>
             <p>You can use rows and cols to organize your footer content.</p>
           </div>
-          <div class="col-12 col-md-6">
-            <h3>Links</h3>
-            <ul>
-              <li><a href="">Home</a></li>
-              <li><a href="">Portafolios</a></li>
-              <li><a href="">Contacto</a></li>
+          <div class="col-12 col-lg-6">
+            <h3 class="fs-5">Links</h3>
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link text-decoration-underline p-0" href="#"
+                  title="Link hacia Home">Home</a></li>
+              <li class="nav-item"><a class="nav-link text-decoration-underline p-0" href="#"
+                  title="Link hacia Portafolios">Portafolios</a></li>
+              <li class="nav-item"><a class="nav-link text-decoration-underline p-0" href="#"
+                  title="Link hacia Contacto">Contacto</a></li>
             </ul>
           </div>
           <div class="col-12">
-            &copy 2022 copyright MasterD
+            © 2022 copyright MasterD
           </div>
         </div>
 
       </footer>
     </div>
   </div>
-
-
 
   <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
