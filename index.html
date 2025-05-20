@@ -31,7 +31,6 @@
       </header>
     </div>
   </div>
-
   <div class="container">
     <main>
       <div id="carrusel" class="d-none d-md-block my-5">
@@ -82,29 +81,36 @@
           <div class="col-12 col-lg-6 my-3">
             <h1>Presupuesto</h1>
             <form action="#" method="post">
-              <label class="form-label" for="nombre">Nombre:</label>
-              <input class="form-control" type="text" name="nombre" id="nombre" required>
-              <label class="form-label" for="apellido">Apellido:</label>
-              <input class="form-control" type="text" id="apellido" required>
-
-              <label class="form-label" for="correo">Correo:</label>
-              <input class="form-control" type="email" id="correo" required>
-
-              <label class="form-label" for="telefono">Teléfono:</label>
-              <input class="form-control" type="tel" id="telefono" required>
-
-              <label class="form-label" for="base">Tipo de trabajo</label>
-              <select id="base">
-                <option>Elige una opción</option>
-                <option>HTML básico 1000€</option>
-                <option>Diseño avanzado 1400€</option>
-                <option>Panel de administración 2500€</option>
-              </select>
-
-              <label class="form-label" for="plazo">Plazo en meses:</label>
-              <input class="form-control" type="number" min="0" id="plazo" required>
-
-              <div class="row">
+              <div class="my-3">
+                <label class="form-label" for="nombre">Nombre:</label>
+                <input class="form-control" type="text" name="nombre" id="nombre" required>
+              </div>
+              <div class="my-3">
+                <label class="form-label" for="apellido">Apellido:</label>
+                <input class="form-control" type="text" id="apellido" required>
+              </div>
+              <div class="my-3">
+                <label class="form-label" for="correo">Correo:</label>
+                <input class="form-control" type="email" id="correo" required>
+              </div>
+              <div class="my-3">
+                <label class="form-label" for="telefono">Teléfono:</label>
+                <input class="form-control" type="tel" id="telefono" required>
+              </div>
+              <div class="my-3">
+                <label class="form-label" for="base">Tipo de trabajo</label>
+                <select class="form-select" id="base">
+                  <option selected>Elige una opción</option>
+                  <option value="1">HTML básico 1000€</option>
+                  <option value="2">Diseño avanzado 1400€</option>
+                  <option value="3">Panel de administración 2500€</option>
+                </select>
+              </div>
+              <div class="my-3">
+                <label class="form-label" for="plazo">Plazo en meses:</label>
+                <input class="form-control" type="number" min="0" id="plazo" required>
+              </div>
+              <div class="row my-3">
                 <div class="col-6">
                   <input type="checkbox" id="galeria">
                   <label class="form-label" for="galeria">Galería</label>
@@ -130,11 +136,14 @@
                   <label class="form-label" for="soporteweb">Soporte Web</label>
                 </div>
               </div>
-              <label class="form-label" for="total">Presupuesto estimado:</label>
-              <input class="form-control" type="text" id="total" disabled>
-
-              <input type="checkbox" id="privacidad" required>
-              <label class="form-label" for="privacidad">He leido la política de privacidad</label>
+              <div class="my-3">
+                <label class="form-label" for="total">Presupuesto estimado:</label>
+                <input class="form-control" type="text" id="total" disabled>
+              </div>
+              <div class="my-3">
+                <input type="checkbox" id="privacidad" required>
+                <label class="form-label" for="privacidad">He leido la política de privacidad</label>
+              </div>
               <div class="col">
                 <button type="submit" class="btn btn-primary">Enviar datos</button>
 
